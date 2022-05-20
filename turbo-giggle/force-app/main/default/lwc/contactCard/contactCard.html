@@ -1,0 +1,19 @@
+<template>
+    <div class="slds-card">
+        <ul class="slds-accordion">
+            <li class="slds-accordion__list-item">
+                <section class="slds-accordion__section slds-is-open">
+                    <div class="slds-accordion__summary">
+                        <h2 class="slds-accordion__summary-heading">
+                            <button class="slds-button slds-button_reset slds-accordion__summary-action"
+                                aria-controls="referenceId-21" aria-expanded="true" title={contact.contactName}>
+                                <lightning-icon icon-name="utility:switch" alternative-text={contact.contactName} title="contact"></lightning-icon>
+                            </button>
+                        </h2>
+                    </div>
+                    <div class="slds-accordion__content" id="referenceId-21">{contact.contactName}</div>
+                </section>
+            </li>
+        </ul>
+    </div>
+</template>

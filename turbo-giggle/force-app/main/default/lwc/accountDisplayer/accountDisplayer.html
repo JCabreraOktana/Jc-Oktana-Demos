@@ -1,0 +1,20 @@
+<template>
+    <div class="slds-theme_default" >
+        <template if:true={accounts}>
+            <template for:each={accounts} for:item="acc" for:index="index">
+              <c-account-card 
+                key={acc.Id} 
+                account={acc}
+                onaccountclicked={handleAccountClicked}>
+                
+            </c-account-card>
+            </template>
+        </template>
+        <template if:false={accounts}>
+            No Accounts to display
+        </template>
+    </div>
+    <template if:true={loading}>
+        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+    </template>
+</template>

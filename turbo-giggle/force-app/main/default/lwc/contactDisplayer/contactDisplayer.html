@@ -1,0 +1,18 @@
+<template>
+    <div class="slds-theme_default" >
+        <template if:true={HasContacts}>
+            <template for:each={contacts} for:item="contact" for:index="index">
+                <c-contact-card 
+                    key={contact.contactId} 
+                    contact={contact}>
+                </c-contact-card>
+            </template>
+        </template>
+        <template if:false={HasContacts}>
+            No Contacts to display
+        </template>
+    </div>
+    <template if:true={loading}>
+        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+    </template>
+</template>

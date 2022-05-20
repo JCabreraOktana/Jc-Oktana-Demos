@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Message to notify contact component to display new contacts</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>Notifies of selected account id</description>
+        <fieldName>accountId</fieldName>
+    </lightningMessageFields>
+    <masterLabel>AccountSelected</masterLabel>
+</LightningMessageChannel>
